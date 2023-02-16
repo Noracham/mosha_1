@@ -127,4 +127,9 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.copy {
+  text-align: center;
+  margin-top: 150px;
 }/*# sourceMappingURL=style.css.map */
