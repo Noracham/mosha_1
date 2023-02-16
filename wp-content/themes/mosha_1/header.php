@@ -14,8 +14,8 @@
         <nav>
             <div class="logo"><a href="<?php echo esc_url(home_url()) ?>"><img src="<?php echo esc_url(get_theme_file_uri('img/logo.svg')) ?>" alt="logo"></a></div>
             <div class="nav-link">
-                <a href="#about">About</a>
-                <a href="#Bicycle">Bicycle</a>
+                <a href="<?php echo esc_url(home_url()) ?>#About">About</a>
+                <a href="<?php echo esc_url(home_url()) ?>#Bicycle">Bicycle</a>
             </div>
         </nav>
     </header>
