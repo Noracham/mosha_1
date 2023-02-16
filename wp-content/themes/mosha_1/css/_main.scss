@@ -10,7 +10,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 80%;
+    width: 100%;
     max-width: 960px;
     height: 100%;
     padding: 0;
@@ -103,6 +103,37 @@
         font-size: 1.4rem;
         text-align: center;
       }
+    }
+  }
+}
+//投稿
+.single {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0 !important;
+  .thumbnail {
+    width: 100%;
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+  }
+  h1 {
+    font-size: 2rem;
+    padding: 0 5%;
+  }
+  p {
+    font-size: 1.4rem;
+    padding: 0 5%;
+  }
+  a {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.2rem;
+    transition: 0.2s;
+    &:hover {
+      opacity: 0.3;
     }
   }
 }
