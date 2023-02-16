@@ -1,9 +1,16 @@
 @use "mixin" as m;
+html {
+  font-size: 62.5%;
+}
 a {
   text-decoration: none;
   color: #000;
 }
 .wrapper {
   max-width: 960px;
-  margin: 0 auto;
+  margin: 100px auto;
+}
+.sub-title {
+  border-bottom: 1px solid #000;
+  font-size: 4rem;
 }
