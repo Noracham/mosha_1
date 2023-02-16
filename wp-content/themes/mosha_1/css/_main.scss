@@ -1,1 +1,38 @@
 @use "mixin" as m;
+.header {
+  width: 100vw;
+  height: 70px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    max-width: 960px;
+    height: 100%;
+    padding: 0;
+    @include m.mq(sp) {
+      width: 95%;
+    }
+    .logo {
+      height: 65%;
+      img {
+        height: 100%;
+      }
+    }
+    .nav-link {
+      display: flex;
+      a {
+        &:first-child {
+          margin-right: 20px;
+        }
+        &:hover {
+          opacity: 0.3;
+        }
+      }
+    }
+  }
+}

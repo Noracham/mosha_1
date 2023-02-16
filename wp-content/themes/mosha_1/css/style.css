@@ -1,1 +1,42 @@
-/*# sourceMappingURL=style.css.map */
+.header {
+  width: 100vw;
+  height: 70px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  max-width: 960px;
+  height: 100%;
+  padding: 0;
+}
+@media screen and (max-width: 768px) {
+  .header nav {
+    width: 95%;
+  }
+}
+.header nav .logo {
+  height: 65%;
+}
+.header nav .logo img {
+  height: 100%;
+}
+.header nav .nav-link {
+  display: flex;
+}
+.header nav .nav-link a:first-child {
+  margin-right: 20px;
+}
+.header nav .nav-link a:hover {
+  opacity: 0.3;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}/*# sourceMappingURL=style.css.map */
