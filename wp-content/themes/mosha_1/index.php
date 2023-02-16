@@ -20,14 +20,16 @@
         $post_data = get_posts($args); ?>
         <?php foreach ($post_data as $post) : setup_postdata($post); ?>
             <div class="bicycle-item">
-                <?php the_post_thumbnail() ?>
-                <h3><?php the_title(); ?></h3>
-                <p><?php if (mb_strlen($post->post_content, 'utf-8') > 30) {
-                        $content = str_replace('¥n', '', mb_substr(strip_tags($post->post_content), 0, 30, 'utf-8'));
-                        echo $content . '・・・';
-                    } else {
-                        echo str_replace('¥n', '', strip_tags($post->post_content));
-                    }; ?></p>
+                <a href="<?php the_permalink() ?>">
+                    <?php the_post_thumbnail() ?>
+                    <h3><?php the_title(); ?></h3>
+                    <p><?php if (mb_strlen($post->post_content, 'utf-8') > 30) {
+                            $content = str_replace('¥n', '', mb_substr(strip_tags($post->post_content), 0, 30, 'utf-8'));
+                            echo $content . '・・・';
+                        } else {
+                            echo str_replace('¥n', '', strip_tags($post->post_content));
+                        }; ?></p>
+                </a>
             </div>
         <?php endforeach; ?>
     </div>
