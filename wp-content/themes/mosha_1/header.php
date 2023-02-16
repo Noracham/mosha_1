@@ -12,11 +12,10 @@
 <body>
     <header class="header">
         <nav>
-            <div class="logo"><img src="<?php echo esc_url(get_theme_file_uri('img/logo.svg')) ?>" alt="logo"></div>
+            <div class="logo"><a href="<?php esc_url(home_url()) ?>"><img src="<?php echo esc_url(get_theme_file_uri('img/logo.svg')) ?>" alt="logo"></a></div>
             <div class="nav-link">
                 <a href="#about">About</a>
                 <a href="#Bicycle">Bicycle</a>
             </div>
         </nav>
     </header>
-    <div class="hero"><img src="<?php echo esc_url(get_theme_file_uri('img/mainvisual.jpg')) ?>" alt="hero"></div>
